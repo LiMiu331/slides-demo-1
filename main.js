@@ -12,7 +12,7 @@ let timer = setInterval(() => {
 document.addEventListener('visibilitychange', function () {
     console.log(document.hidden)
     if (document.hidden) {
-        window.clearInterval(timer)
+        window.clearInterval(timer) 
     } else {
        timer =  setInterval(() => {
             makeLeave(getImage(n))
